@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bus Turistico</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="text-align:center">
+    <h1>
+ 
+    </h1>
+  </div>
+
+
+<ion-button  expand="full" (click)="scanCode()" >    Lectura de QR
+<ion-icon name="qr-scanner"></ion-icon>
+</ion-button>
+
+
+
+  <ion-card *ngIf="scannedCode">
+    
+    <ion-card-content>
+      Resultado: {{ scannedCode }}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
